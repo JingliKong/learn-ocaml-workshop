@@ -1,10 +1,10 @@
 open! Base
 
 (* Write a function that adds 1 to an int. (This function may seem familiar!) *)
-let add1 x = failwith "For you to implement" 
+let add1 x = x + 1
 
 (* Now write a function that squares its argument. *)
-let square x = failwith "For you to implement"
+let square x = x * x
 
 (* Functions are "first class" in OCaml. This means that you can take a function
    and pass it around as an argument to other functions. We call functions that
@@ -15,7 +15,7 @@ let square x = failwith "For you to implement"
 
    Hint: Remember that you can use parenthese or let bindings to order function
    calls.  *)
-let twice f x = failwith "For you to implement"
+let twice f x = f (f x)
 
 (* Take a second to look at the function signature for [twice] in the mli
    file. Note that the first argument of twice is a function, [f], which has

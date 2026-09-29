@@ -1,6 +1,6 @@
 {
     "ocaml.sandbox": {
-        "kind": "dune",
-        "root": "${workspaceFolder:learn-ocaml-workshop}"
+        "kind": "opam",
+        "switch": "learn-ocaml-workshop"
     }
 }
